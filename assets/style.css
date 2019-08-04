@@ -14,3 +14,19 @@
     border: white 1px solid;
     color: white;
 }
+
+button {
+    margin: 5px;
+    word-wrap: break-word;
+}
+
+img {
+    margin: 10px;
+    align-content: center;
+    height: 250px;
+    width: 250px;
+}
+
+body {
+    background: rgb(222, 253, 210);
+}
