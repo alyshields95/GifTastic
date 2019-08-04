@@ -41,5 +41,45 @@ $(document).ready(function () {
         return cardDiv;
     }
 
+    $(document).on("click", ".topic", function () {
+        $("#gifs").empty();
+        $.ajax({
+            method: "GET",
+            url: requestUrl + $(this).text()
+        }).then(function (response) {
+
+            for (var i = 0; i < response.data.length; i++) {
+                var img = createImage(response, i);
+
+                $("#gifs").append(img);
+
+            }
+        });
+    });
+
+    $(document).on("click", ".giphy-img", function () {
+        var state = $(this).attr("data-state");
+
+        if (state === "still") {
+            $(this).attr("data-state", "animated");
+            $(this).attr("src", $(this).attr("data-animated"));
+        } else {
+            $(this).attr("data-state", "still");
+            $(this).attr("src", $(this).attr("data-still"));
+        }
+    });
+
+    var searchButton = $("#search-button");
+
+    $(searchButton).on("click", function () {
+        var newText = $("#search").val().trim();
+        var newButton = $("<button>");
+        newButton.text(newText);
+        newButton.addClass("btn btn-info topic");
+        $("#buttons").append(newButton);
+
+    });
+
+
 
 });
