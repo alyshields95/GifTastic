@@ -23,12 +23,12 @@ button {
 img {
     margin: 10px;
     align-content: center;
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 350px;
 }
 
 body {
-    background: rgb(222, 253, 210);
+    background: whitesmoke;
 }
 
 .container {
@@ -55,13 +55,13 @@ body {
     font-size: 20pt;
     margin: 20px;
     float: left;
-    border: gray 1pt solid;
+    border: purple;
     background: transparent;
 }
 
 .card-footer {
     display: inline;
-    background-color: rgb(132, 180, 180);
+    background-color: pink;
     color: azure;
 }
 

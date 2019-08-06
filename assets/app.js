@@ -3,7 +3,7 @@ $(document).ready(function () {
     var topics = [
         "Mickey Mouse",
         "Minnie Mouse",
-        "Cinderlla",
+        "Cinderella",
         "Rapunzel",
         "Elsa"
     ]

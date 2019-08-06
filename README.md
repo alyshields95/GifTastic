@@ -1,1 +1,3 @@
 # GifTastic
+
+This assignment is 
